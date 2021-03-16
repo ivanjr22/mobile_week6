@@ -4,8 +4,8 @@ import 'package:mobile_week6/pages/item_page.dart';
 
 class HomePage extends StatelessWidget{
   final List<Item> Items = [ 
-   Item(name: 'Sugar', price: 5000 , stok: '10' , deskripsi: 'Gula merupakan salah satu pemanis yang umum dikonsumsi masyarakat. Gula biasa digunakan sebagai pemanis di makanan maupun minuman, dalam bidang makanan, selain sebagai pemanis, gula juga digunakan sebagai stabilizer dan pengawet. Gula merupakan suatu karbohidrat sederhana yang umumnya dihasilkan dari tebu.' ),
-   Item(name: 'Salt', price: 2000, stok: '15' , deskripsi: 'Dalam ilmu kimia, garam adalah senyawa ionik yang terdiri dari ion positif (kation) dan ion negatif (anion), sehingga membentuk senyawa netral (tanpa bermuatan). Garam terbentuk dari hasil reaksi asam dan basa. Natrium klorida (NaCl), bahan utama garam dapur adalah suatu garam.' )
+   Item(kode : 'A01', name: 'Sugar', price: 5000 , stok: '10' , deskripsi: 'Gula merupakan salah satu pemanis yang umum dikonsumsi masyarakat. Gula biasa digunakan sebagai pemanis di makanan maupun minuman, dalam bidang makanan, selain sebagai pemanis, gula juga digunakan sebagai stabilizer dan pengawet. Gula merupakan suatu karbohidrat sederhana yang umumnya dihasilkan dari tebu.' ),
+   Item(kode : 'B01', name: 'Salt', price: 2000, stok: '15' , deskripsi: 'Dalam ilmu kimia, garam adalah senyawa ionik yang terdiri dari ion positif (kation) dan ion negatif (anion), sehingga membentuk senyawa netral (tanpa bermuatan). Garam terbentuk dari hasil reaksi asam dan basa. Natrium klorida (NaCl), bahan utama garam dapur adalah suatu garam.' )
  ];
 
   @override
@@ -35,6 +35,7 @@ class HomePage extends StatelessWidget{
                     },
                     child: Row(
                       children: [
+                        Expanded(child: Text(item.kode)),
                         Expanded(child: Text(item.name)),
                         Expanded(child: Text(item.stok)),
                         Expanded(

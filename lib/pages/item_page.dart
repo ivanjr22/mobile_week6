@@ -19,6 +19,7 @@ class ItemPage extends StatelessWidget{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text("Kode : " + tempItem.kode.toString()),
               Text("Harga : " + tempItem.price.toString()),
               Text("Stok : " + tempItem.stok.toString()),
               Text("Deskripsi : " +tempItem.deskripsi.toString()),
