@@ -29,9 +29,9 @@ class ItemPage extends StatelessWidget{
                 },
                 child: Text("Back"),
               ),
-              ],
+            ],
           ),
-          ),
+        ),
       ),
     );
   }
