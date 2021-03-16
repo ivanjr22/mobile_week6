@@ -20,7 +20,14 @@ class ItemPage extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Harga : " + tempItem.price.toString()),
-              Text(tempItem.deskripsi),
+              Text("Stok : " + tempItem.stok.toString()),
+              Text("Deskripsi : " +tempItem.deskripsi.toString()),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("Back"),
+              ),
               ],
           ),
           ),
